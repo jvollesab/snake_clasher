@@ -14,7 +14,9 @@ h1 span { color: #db5637; }
 canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; }
 #overlay { position: absolute; inset: 0; display: grid; place-items: center; background: #28371cb5; }
 #overlay.hidden { display: none; }
-.round-message { text-shadow: 3px 3px 0 #31421f; }
+#round-message { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; align-content: center; text-align: center; background: #060b18ae; backdrop-filter: blur(3px); color: #f3f8ff; font-size: 29px; font-weight: 900; letter-spacing: .06em; text-shadow: 0 0 24px #62e9ff; }
+#round-message[hidden] { display: none; }
+#round-message small { display: block; margin-top: 10px; color: #e9efd2; font-size: 13px; font-weight: 600; letter-spacing: .12em; }
 .join-card { width: min(90%, 405px); padding: 26px; text-align: center; border: 5px solid #495b28; background: #f5edca; box-shadow: 7px 7px 0 #263219; }
 h2 { color: #3e5523; font-size: 27px; }
 form { display: flex; gap: 8px; margin: 18px 0 13px; }
